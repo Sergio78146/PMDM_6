@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+        <!-- Colores primarios -->
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#9C27B0</color> <!-- Color morado 500 -->
+        <color name="purple_700">#7B1FA2</color> <!-- Color morado 700 -->
+        <color name="teal_200">#80CBC4</color> <!-- Color verde claro 200 -->
+        <color name="teal_700">#00796B</color> <!-- Color verde oscuro 700 -->
+
+        <!-- Colores de fondo y textos -->
+        <color name="background_color">#F5F5F5</color> <!-- Fondo claro -->
+        <color name="black">#000000</color> <!-- Negro -->
+        <color name="white">#FFFFFF</color> <!-- Blanco -->
+
+        <!-- Colores adicionales -->
+        <color name="colorPrimary">#9C27B0</color> <!-- Color principal (morado) -->
+        <color name="colorPrimaryVariant">#7B1FA2</color> <!-- Variante del color principal -->
+        <color name="colorOnPrimary">#FFFFFF</color> <!-- Color de texto en el fondo primario -->
+        <color name="colorSecondary">#80CBC4</color> <!-- Color secundario (verde claro) -->
+        <color name="colorSecondaryVariant">#00796B</color> <!-- Variante del color secundario -->
+        <color name="colorOnSecondary">#000000</color> <!-- Color de texto en el fondo secundario -->
+
+</resources>

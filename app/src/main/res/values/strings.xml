@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">FilmingApp</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">FilmingApp</string>
+    <string name="nav_header_subtitle">Encuentra tus series y películas favoritas</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_series">Series</string>
+    <string name="menu_peliculas">Películas</string>
+
+    <string name="pelicula_imagen">Imagen de la película</string>
+
+    <string name="serie_imagen">Imagen de la serie</string>
+    <string name="titulo">Título:</string>
+    <string name="director">Director:</string>
+    <string name="reparto">Reparto:</string>
+    <string name="temporadas">Temporadas:</string>
+    <string name="clasificacion">Clasificación:</string>
+    <string name="sinopsis">Sinopsis:</string>
+
+</resources>

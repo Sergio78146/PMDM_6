@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_peliculas">
+
+    <fragment
+        android:id="@+id/nav_peliculas"
+        android:name="es.studium.practica6.ui.peliculas.PeliculasFragment"
+        android:label="@string/menu_peliculas"
+        tools:layout="@layout/fragment_peliculas" />
+
+    <fragment
+        android:id="@+id/nav_detalles_pelicula"
+        android:name="es.studium.practica6.ui.peliculas.DetallesPeliculaFragment"
+        android:label="Detalles Película"
+        tools:layout="@layout/fragemnt_detalles_pelicula" />
+
+
+    <fragment
+        android:id="@+id/nav_series"
+        android:name="es.studium.practica6.ui.series.SeriesFragment"
+        android:label="@string/menu_series"
+        tools:layout="@layout/fragment_series" />
+
+    <fragment
+        android:id="@+id/nav_detalles_serie"
+        android:name="es.studium.practica6.ui.series.DetallesSeriesFragment"
+        android:label="Detalles Película"
+        tools:layout="@layout/fragment_detalles_serie" />
+
+</navigation>
