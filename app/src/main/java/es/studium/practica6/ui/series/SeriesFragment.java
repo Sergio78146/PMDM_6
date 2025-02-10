@@ -18,14 +18,15 @@ import es.studium.practica6.R;
 
 public class SeriesFragment extends Fragment {
 
+    // Método que crea la vista del fragmento
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_series, container, false);
+        View view = inflater.inflate(R.layout.fragment_series, container, false);  // Infla el layout
 
-        RecyclerView rvSeries = view.findViewById(R.id.rvSeries);
-        rvSeries.setLayoutManager(new LinearLayoutManager(getContext()));
+        RecyclerView rvSeries = view.findViewById(R.id.rvSeries);  // Referencia al RecyclerView
+        rvSeries.setLayoutManager(new LinearLayoutManager(getContext()));  // Usa un LinearLayoutManager para mostrar la lista en formato vertical
 
-        // Lista de series con datos completos
+        // Lista de series con sus respectivos datos
         List<Series> listaSeries = new ArrayList<>();
         listaSeries.add(new Series(R.drawable.breaking_bad, "Breaking Bad", "Breaking Bad", "Vince Gilligan", "Bryan Cranston, Aaron Paul", 5, "5", "Un profesor de química se convierte en fabricante de metanfetaminas."));
         listaSeries.add(new Series(R.drawable.stranger_things, "Stranger Things", "Stranger Things", "Los Duffer Brothers", "Millie Bobby Brown, Finn Wolfhard", 2, "4", "Un grupo de amigos descubre un mundo paralelo llamado Upside Down."));
@@ -36,8 +37,9 @@ public class SeriesFragment extends Fragment {
         listaSeries.add(new Series(R.drawable.dark, "Dark", "Dark", "Baran bo Odar, Jantje Friese", "Louis Hofmann, Lisa Vicari", 4, "3", "Una serie que explora los secretos de un pequeño pueblo y los viajes en el tiempo."));
         listaSeries.add(new Series(R.drawable.friends, "Friends", "Friends", "David Crane, Marta Kauffman", "Jennifer Aniston, Courteney Cox", 3, "10", "La vida y aventuras de un grupo de amigos en Nueva York."));
 
+        // Configura el adaptador con la lista de series y el listener de clics
         SeriesAdapter adapter = new SeriesAdapter(listaSeries, serie -> {
-            // Navegación al fragmento de detalles
+            // Crea un Bundle con los datos de la serie seleccionada para pasarlos al fragmento de detalles
             Bundle bundle = new Bundle();
             bundle.putInt("imagen", serie.getImagen());
             bundle.putString("nombre", serie.getNombre());
@@ -47,10 +49,12 @@ public class SeriesFragment extends Fragment {
             bundle.putInt("clasificacion", serie.getClasificacion());
             bundle.putString("temporadas", serie.getTemporadas());
             bundle.putString("sinopsis", serie.getSinopsis());
+
+            // Navega al fragmento de detalles con los datos de la serie seleccionada
             Navigation.findNavController(view).navigate(R.id.nav_detalles_serie, bundle);
         });
 
-        rvSeries.setAdapter(adapter);
+        rvSeries.setAdapter(adapter);  // Asigna el adaptador al RecyclerView
         return view;
     }
 }
